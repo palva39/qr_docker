@@ -10,7 +10,7 @@ def generate_qr_code():
     )
     qr.add_data(url)
     qr.make(fit=True)
-    img = qr.make_image(fill_color="black", back_color="white")
+    img = qr.make_image(fill_color="green", back_color="black")
     img.save("/app/qr_code.png")  # Save in the container
 
 if __name__ == "__main__":
